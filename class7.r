@@ -58,4 +58,8 @@ my_product(num_v)
 df <- read.csv("example_data.csv")
 
 unique(df$category_system)
+typeof(df$category_system)
+
 df[df$subject == 1, ]
+
+aggregate(correct ~ category_system + subject, FUN = my_product, df)
