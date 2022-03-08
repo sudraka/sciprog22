@@ -103,6 +103,13 @@ my_func <- function(argument1, argument2) {
 
 Again we see the use of curly braces where Python uses a colon (`:`) followed by an indented block of code. This difference also applies to other control structures as well; for example, based on what you've learned so far, try writing a while-loop to count up to ten. Can you figure out how to do it?
 
+```r
+i <- 0
+while (i < 10) {
+  print(i**2)
+  i = i + 1
+}
+```
 **Lists in Python:**
 
 ```python
@@ -116,6 +123,13 @@ my_colors <- list('red', 'green', 'blue')
 ```
 
 To access an item in the list you use brackets to supply the index to a particular item. For example, to get the first element of the list you would use `my_colors[1]` (note that counting is from 1 in R). Based on what you know so far, use a for-loop to iterate over the `my_colors` lists and print out each color one by one.
+
+```r
+for (color in my_colors) {
+  print(color)
+} 
+
+```
 
 It's actually not so common to use lists in R. Because R is strongly focused on statistics and numerical computation, it's much more common to work with vectors, matrices, and data frames.
 
