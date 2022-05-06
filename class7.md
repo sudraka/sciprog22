@@ -2,8 +2,7 @@
 
 ## Class 7 – Intro to R – 8 Mar 2022
 
-Welcome to the final week of the course! I hope you've enjoyed it so far and have learned at least a few new skills. Today, we're going to dip our toes into *another* language, [R](https://www.r-project.org). Like, Python, R is an open-source programming language; however, it is much more focused on statistics and numerical computation. But don't panic! There is NO statistics in today's class! Instead, I want to introduce you to R from the point of view of *coding* (rather than *doing statistics*). Davide Crepaldi will give you a much more in-depth statistical experience in his [Data Modelling course](https://phdcns.sissa.it/data-modelling-human-cognition-research) in April.
-
+Welcome to the final week of the course! I hope you've enjoyed it so far and have learned at least a few new skills. Today, we're going to dip our toes into _another_ language, [R](https://www.r-project.org). Like, Python, R is an open-source programming language; however, it is much more focused on statistics and numerical computation. But don't panic! There is NO statistics in today's class! Instead, I want to introduce you to R from the point of view of _coding_ (rather than _doing statistics_). Davide Crepaldi will give you a much more in-depth statistical experience in his [Data Modelling course](https://phdcns.sissa.it/data-modelling-human-cognition-research) in April.
 
 ## RStudio
 
@@ -12,7 +11,6 @@ Like Python, there are many different ways to use R. You can use it from the ter
 There are some paid versions of RStudio, but we will use the free open-source version, which is available from https://www.rstudio.com/products/rstudio/ (click the "Download RStudio Desktop" button).
 
 Once you've downloaded and installed RStudio, click around some of the menus and buttons to get a general idea of where everything is. The key things to note are the console, where you can type commands, the environment window which shows the variables that have been created, and the file manager which allows you to open files. Try typing some basic commands into the console, like `1 + 1` or `print('hello')`.
-
 
 ## Basic R Syntax
 
@@ -110,6 +108,7 @@ while (i < 10) {
   i = i + 1
 }
 ```
+
 **Lists in Python:**
 
 ```python
@@ -127,12 +126,11 @@ To access an item in the list you use brackets to supply the index to a particul
 ```r
 for (color in my_colors) {
   print(color)
-} 
+}
 
 ```
 
 It's actually not so common to use lists in R. Because R is strongly focused on statistics and numerical computation, it's much more common to work with vectors, matrices, and data frames.
-
 
 ## Vectors and Matrices
 
@@ -185,7 +183,6 @@ Note also here that `TRUE` and `FALSE` have to be fully capitalized in R (recall
 
 Try multiplying a matrix by a vector. Does it work as you expect?
 
-
 ## Scripting and Working with Data
 
 Entering commands directly into the console is not a good long-term way to use R. The reason is that once you close RStudio, everything you typed into the console will be lost. Instead, you should get into the habit of writing scripts, so that the sequence of steps you took is reproducible.
@@ -195,7 +192,7 @@ Click the green + button in the top-left corner to create a new script. Type in 
 Another important concept to understand is the **working directory**. This is the directory (path) where R is currently looking at your computer. If you need to access files, you need to be aware of your working directory so that you can point to the file correctly. you can either pick a directory in the file manager and choose "Set As Working Directory" or you can use the `setwd()` function:
 
 ```r
-setwd('~/Code/sciprog22/')
+setwd('~/code/sissa/sciprog22/')
 ```
 
 Once you've set the working directory, it should then be possible to load files. For example, let's load the `example_data.csv` file that we worked with in a previous class:
@@ -224,7 +221,6 @@ df[ df$subject == 1, ]
 
 Data frames are very important in R, so it's good to get lots of practice using them. Check out [this tutorial](https://www.tutorialspoint.com/r/r_data_frames.htm), for example, and see if you can apply the examples to the `example_data.csv` data we loaded above.
 
-
 ## Activities
 
 1. Write an R function that tells you what generation you belong to. The function should take a birth year and return the name of the generation. You can look back at the Python code from Class 1 to remind yourself.
@@ -236,7 +232,6 @@ Data frames are very important in R, so it's good to get lots of practice using 
 4. Load the `example_data.csv` that we used in a previous class and try to reproduce some of the things we did back in Class 4 (e.g. calculating accuracy by participant).
 
 5. Load the CSV data you generated with the Count The Dots experiment (either the PsychoPy version or the jsPsych version) and try to make some plots of your data. If you don't have the data, run the experiment again to generate some data. You will need to do some research online to find out how to make plots.
-
 
 ## Homework
 
